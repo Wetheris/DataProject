@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="VBox1" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="616.0" spacing="50.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.SecondaryController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <ImageView fx:id="imgImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="textArea1" blendMode="SRC_ATOP" maxWidth="-Infinity" prefHeight="384.0" prefWidth="369.0" style="-fx-background-color: #F5FFFA;">
+         <effect>
+            <DropShadow />
+         </effect></TextArea>
+      <ToolBar prefHeight="58.0" prefWidth="646.0">
+        <items>
+            <Button fx:id="openYellow" mnemonicParsing="false" onMouseClicked="#openYellow" onMouseDragged="#openYellow" prefHeight="27.0" prefWidth="59.0" style="-fx-background-color: FFFF00;" text="Yellow" textFill="#060700" />
+            <Button fx:id="openViolet" mnemonicParsing="false" onMouseClicked="#openViolet" prefHeight="27.0" prefWidth="62.0" style="-fx-background-color: EE82EE;" text="Violet" />
+            <Button fx:id="openIndigo" mnemonicParsing="false" onMouseClicked="#openIndigo" prefHeight="27.0" prefWidth="63.0" style="-fx-background-color: #4B0082;" text="Indigo" textFill="#fffefe" />
+            <Button fx:id="openOrange" mnemonicParsing="false" onMouseClicked="#openOrange" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: #FFA500;" text="Orange" />
+            <Button fx:id="openRed" mnemonicParsing="false" onMouseClicked="#openRed" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: #FF0000;" text="Red" />
+            <Button fx:id="openGreen" mnemonicParsing="false" onMouseClicked="#openGreen" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: #006400;" text="Green" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="openBlue" mnemonicParsing="false" onMouseClicked="#openBlue" prefHeight="27.0" prefWidth="64.0" style="-fx-background-color: #0000FF;" text="Blue" textFill="#fcf9f9" />
+            <Button fx:id="btnEmployee" mnemonicParsing="false" onMouseClicked="#btnEmployee" text="Employee" />
+        </items>
+      </ToolBar>
+   </children>
+   
+</VBox>
